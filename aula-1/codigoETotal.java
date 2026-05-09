@@ -6,23 +6,29 @@ public class Main
 	  double abacaxi = 8.5;
 		double goiaba = 2.0;
 		double laranja = 1.3;
+			System.out.println("Quantos vc quer? ");
+		int quantidade = sc.nextInt();
+		
 		System.out.println("Qual o codigo do produto? ");
 		int numeroProduto = sc.nextInt();
+	
+		
 		if (numeroProduto==1){
-		    System.out.println("Abacaxi 8,5");
+		    System.out.println(abacaxi*quantidade);
 		}
 		else if (numeroProduto==2){
-		    System.out.println("Goiaba 2,0");
+		    System.out.println(quantidade*goiaba);
 		    
 		}
 		else if (numeroProduto==3)
 		{
-		    System.out.println("Laranja 1.3");
+		    System.out.println(quantidade*laranja);
 		    
 		}
 		else 
 		{
 		    System.out.println("Esse produto não existe");
+		   
 		}
 		
 		
