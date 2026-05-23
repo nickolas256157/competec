@@ -2,29 +2,20 @@ import java.util.Scanner;
 public class Main
 {
 	public static void main(String[] args) {
-	    Scanner sc = new Scanner (System.in);
-	  double abacaxi = 8.5;
-		double goiaba = 2.0;
-		double laranja = 1.3;
-		System.out.println("Qual o codigo do produto? ");
-		int numeroProduto = sc.nextInt();
-		if (numeroProduto==1){
-		    System.out.println("Abacaxi 8,5");
-		}
-		else if (numeroProduto==2){
-		    System.out.println("Goiaba 2,0");
-		    
-		}
-		else if (numeroProduto==3)
-		{
-		    System.out.println("Laranja 1.3");
-		    
-		}
-		else 
-		{
-		    System.out.println("Esse produto não existe");
-		}
-		
-		
-	}
+	    Scanner sc = new Scanner(System.in);
+	    while(true){
+    	    String senha = sc.nextLine();
+    	   
+    	    if(senha.equals("claudio"))
+    	    {
+    	        System.out.println("aceso permitido");
+    	        break;
+    	    }
+    	    else
+    	    {
+    	        System.out.println("senha Inválida");
+    	        continue;
+    	    }
+	    }
+}
 }
